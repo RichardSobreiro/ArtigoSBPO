@@ -1,0 +1,31 @@
+{
+  "viagens": 
+  [
+    {
+      "Viagem": 1,
+      "Inicio": 0,
+      "Fim": 0,
+      "HorarioSolicitado": 0,
+      "HorarioReal": 0,
+      "HorarioRealFinalPesagem": 0,
+      "HorarioOtimoFinalPesagem": 0,
+      "AtrasoPesagem": 0,
+      "AvancoPesagem": 0,
+      "AtrasoChegadaCliente": 0,
+      "AvancoChegadaCliente": 0
+    },
+    {
+      "Viagem": 2,
+      "Inicio": 0,
+      "Fim": 0,
+      "HorarioSolicitado": 0,
+      "HorarioReal": 0,
+      "HorarioRealFinalPesagem": 0,
+      "HorarioOtimoFinalPesagem": 0,
+      "AtrasoPesagem": 0,
+      "AvancoPesagem": 0,
+      "AtrasoChegadaCliente": 0,
+      "AvancoChegadaCliente": 0
+    }
+  ]
+}
