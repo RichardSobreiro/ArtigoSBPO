@@ -5,8 +5,12 @@ namespace API.ArtigoSBPO.DataObjects
     [JsonObject]
     public class ViagemInfo
     {
+        [JsonProperty("Betoneira")]
+        public int Betoneira { get; set; }
         [JsonProperty("Viagem")]
         public int Viagem { get; set; }
+        [JsonProperty("PontoCarga")]
+        public int PontoCarga { get; set; }
         [JsonProperty("Inicio")]
         public int Inicio { get; set; }
         [JsonProperty("Fim")]

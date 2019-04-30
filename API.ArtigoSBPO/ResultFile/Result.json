@@ -1,10 +1,11 @@
 {
-  "viagens": 
-  [
+  "viagens": [
     {
+      "Betoneira": 1,
       "Viagem": 1,
-      "Inicio": 0,
-      "Fim": 0,
+      "PontoCarga": 1,
+      "Inicio": 600,
+      "Fim": 700,
       "HorarioSolicitado": 0,
       "HorarioReal": 0,
       "HorarioRealFinalPesagem": 0,
@@ -15,9 +16,41 @@
       "AvancoChegadaCliente": 0
     },
     {
+      "Betoneira": 2,
       "Viagem": 2,
-      "Inicio": 0,
-      "Fim": 0,
+      "PontoCarga": 1,
+      "Inicio": 400,
+      "Fim": 500,
+      "HorarioSolicitado": 0,
+      "HorarioReal": 0,
+      "HorarioRealFinalPesagem": 0,
+      "HorarioOtimoFinalPesagem": 0,
+      "AtrasoPesagem": 0,
+      "AvancoPesagem": 0,
+      "AtrasoChegadaCliente": 0,
+      "AvancoChegadaCliente": 0
+    },
+    {
+      "Betoneira": 1,
+      "Viagem": 3,
+      "PontoCarga": 1,
+      "Inicio": 800,
+      "Fim": 900,
+      "HorarioSolicitado": 0,
+      "HorarioReal": 0,
+      "HorarioRealFinalPesagem": 0,
+      "HorarioOtimoFinalPesagem": 0,
+      "AtrasoPesagem": 0,
+      "AvancoPesagem": 0,
+      "AtrasoChegadaCliente": 0,
+      "AvancoChegadaCliente": 0
+    },
+    {
+      "Betoneira": 2,
+      "Viagem": 4,
+      "PontoCarga": 1,
+      "Inicio": 1000,
+      "Fim": 1100,
       "HorarioSolicitado": 0,
       "HorarioReal": 0,
       "HorarioRealFinalPesagem": 0,
