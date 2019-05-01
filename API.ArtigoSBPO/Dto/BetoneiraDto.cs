@@ -6,5 +6,6 @@ namespace API.ArtigoSBPO.Dto
     {
         public List<ViagemDto> viagens { get; set; }
         public int pontoCargaId { get; set; }
+        public int betoneira { get; set; }
     }
 }

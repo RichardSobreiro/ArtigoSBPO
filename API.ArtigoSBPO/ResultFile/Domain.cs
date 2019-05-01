@@ -23,6 +23,7 @@ namespace API.ArtigoSBPO.ResultFile
                     betoneirasDictionary.Add(viagemInfo.Betoneira, new BetoneiraDto());
                     betoneirasDictionary[viagemInfo.Betoneira].viagens = new List<ViagemDto>();
                     betoneirasDictionary[viagemInfo.Betoneira].pontoCargaId = viagemInfo.PontoCarga;
+                    betoneirasDictionary[viagemInfo.Betoneira].betoneira = viagemInfo.Betoneira;
                 }
                 ViagemDto viagemDto = ConverterViagemInfoParaViagemDto(viagemInfo);
                 betoneirasDictionary[viagemInfo.Betoneira].viagens.Add(viagemDto);
@@ -60,13 +61,13 @@ namespace API.ArtigoSBPO.ResultFile
             return viagemDto;
         }
 
-        private static DateTime ConverterMinutosParaHoraMinutos(int minutosTotal)
+        private static string ConverterMinutosParaHoraMinutos(int minutosTotal)
         {
             int horas = (minutosTotal - (minutosTotal % 60)) / 60;
             int minutos = minutosTotal - (horas * 60);
             DateTime dataAtual = DateTime.Now;
             return new DateTime(dataAtual.Year, dataAtual.Month, dataAtual.Day, 0, 0, 0)
-                .AddHours(horas).AddMinutes(minutos);
+                .AddHours(horas).AddMinutes(minutos).ToString("dd/MM/yyyy HH:mm");
         }
     }
 }

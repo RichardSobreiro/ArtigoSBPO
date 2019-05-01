@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtigoSBPO", "ArtigoSBPO.csproj", "{D4006F03-C8C5-466E-BDF9-64D0D609C675}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.ArtigoSBPO", "API.ArtigoSBPO\API.ArtigoSBPO.csproj", "{7AA6A258-2D13-42B1-BDB2-697FF5331ACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.ArtigoSBPO", "API.ArtigoSBPO\API.ArtigoSBPO.csproj", "{7AA6A258-2D13-42B1-BDB2-697FF5331ACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "..\Users\Richard Sobreiro\source\repos\WebApplication1\WebApplication1.csproj", "{8719E2D5-CFE2-4772-ACA9-736AF31DA4B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7AA6A258-2D13-42B1-BDB2-697FF5331ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AA6A258-2D13-42B1-BDB2-697FF5331ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AA6A258-2D13-42B1-BDB2-697FF5331ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8719E2D5-CFE2-4772-ACA9-736AF31DA4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8719E2D5-CFE2-4772-ACA9-736AF31DA4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8719E2D5-CFE2-4772-ACA9-736AF31DA4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8719E2D5-CFE2-4772-ACA9-736AF31DA4B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
