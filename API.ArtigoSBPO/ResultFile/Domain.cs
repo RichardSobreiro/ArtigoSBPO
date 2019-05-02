@@ -58,6 +58,14 @@ namespace API.ArtigoSBPO.ResultFile
             viagemDto.viagemId = viagemInfo.Viagem;
             viagemDto.inicio = ConverterMinutosParaHoraMinutos(viagemInfo.Inicio);
             viagemDto.fim = ConverterMinutosParaHoraMinutos(viagemInfo.Fim);
+            viagemDto.horarioSolicitado = ConverterMinutosParaHora(viagemInfo.HorarioSolicitado);
+            viagemDto.horarioReal = ConverterMinutosParaHora(viagemInfo.HorarioReal);
+            viagemDto.horarioRealFinalPesagem = ConverterMinutosParaHora(viagemInfo.HorarioRealFinalPesagem);
+            viagemDto.horarioOtimoFinalPesagem = ConverterMinutosParaHora(viagemInfo.HorarioOtimoFinalPesagem);
+            viagemDto.atrasoPesagem = ConverterMinutosParaHora(viagemInfo.AtrasoPesagem);
+            viagemDto.avancoPesagem = ConverterMinutosParaHora(viagemInfo.AvancoPesagem);
+            viagemDto.atrasoChegadaCliente = ConverterMinutosParaHora(viagemInfo.AtrasoChegadaCliente);
+            viagemDto.avancoChegadaCliente = ConverterMinutosParaHora(viagemInfo.AvancoChegadaCliente);
             return viagemDto;
         }
 
@@ -67,7 +75,16 @@ namespace API.ArtigoSBPO.ResultFile
             int minutos = minutosTotal - (horas * 60);
             DateTime dataAtual = DateTime.Now;
             return new DateTime(dataAtual.Year, dataAtual.Month, dataAtual.Day, 0, 0, 0)
-                .AddHours(horas).AddMinutes(minutos).ToString("dd/MM/yyyy HH:mm");
+                .AddHours(horas).AddMinutes(minutos).ToString("MM/dd/yyyy HH:mm");
+        }
+
+        private static string ConverterMinutosParaHora(int minutosTotal)
+        {
+            int horas = (minutosTotal - (minutosTotal % 60)) / 60;
+            int minutos = minutosTotal - (horas * 60);
+            DateTime dataAtual = DateTime.Now;
+            return new DateTime(dataAtual.Year, dataAtual.Month, dataAtual.Day, 0, 0, 0)
+                .AddHours(horas).AddMinutes(minutos).ToString("HH:mm");
         }
     }
 }
