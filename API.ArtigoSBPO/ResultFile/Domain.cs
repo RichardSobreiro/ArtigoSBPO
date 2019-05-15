@@ -54,7 +54,7 @@ namespace API.ArtigoSBPO.ResultFile
         private static ViagemDto ConverterViagemInfoParaViagemDto(ViagemInfo viagemInfo)
         {
             ViagemDto viagemDto = new ViagemDto();
-            viagemDto.clienteDescricao = $"Cliente {viagemInfo.Viagem}";
+            viagemDto.clienteDescricao = $"Viagem {viagemInfo.Viagem}";
             viagemDto.viagemId = viagemInfo.Viagem;
             viagemDto.inicio = ConverterMinutosParaHoraMinutos(viagemInfo.Inicio);
             viagemDto.fim = ConverterMinutosParaHoraMinutos(viagemInfo.Fim);
